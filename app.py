@@ -42,7 +42,7 @@ TEMPLATE = """
 """
 @app.route("/", methods=["GET", "POST"])
 def home():
-results = None
+	results = None
 	if request.method == "POST":
 		try:
 			a = float(request.form["a"])
